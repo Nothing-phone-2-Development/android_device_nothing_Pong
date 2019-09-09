@@ -46,6 +46,6 @@ cc_library {
     owner: "qti",
     export_include_dirs: ["."],
     header_libs: [
-            "qti_kernel_headers",
+            "generated_kernel_headers",
     ],
 }
