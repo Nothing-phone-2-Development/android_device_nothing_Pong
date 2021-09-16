@@ -10,6 +10,9 @@ genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qco
 genfscon sysfs /devices/platform/goodix_ts.0/fp_state               u:object_r:vendor_sysfs_sensors:s0
 genfscon sysfs /devices/platform/goodix_ts.0/single_tap             u:object_r:vendor_sysfs_sensors:s0
 
+# PowerShare
+genfscon sysfs /class/qcom-battery/wireless_boost_en                u:object_r:vendor_sysfs_powershare:s0
+
 # Vibrator
 genfscon sysfs /devices/platform/soc/88c000.i2c/i2c-3/3-005a/leds/vibrator   u:object_r:sysfs_vibrator:s0
 
