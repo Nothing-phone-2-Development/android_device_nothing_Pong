@@ -5,7 +5,7 @@
 //
 
 cc_binary {
-    name: "android.hardware.sensors@2.1-service.multihal",
+    name: "android.hardware.sensors@2.1-service.nt-multihal",
     defaults: [
         "hidl_defaults",
     ],
