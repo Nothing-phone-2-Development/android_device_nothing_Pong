@@ -146,9 +146,9 @@ Return<RequestStatus> BiometricsFingerprint::ErrorFilter(int32_t error) {
 
 // Translate from errors returned by traditional HAL (see fingerprint.h) to
 // HIDL-compliant FingerprintError.
-FingerprintError BiometricsFingerprint::VendorErrorFilter(int32_t error, int32_t* vendorCode) {
-    *vendorCode = 0;
-    switch (error) {
+FingerprintError BiometricsFingerprint::VendorErrorFilter(int32_t error,
+            int32_t* vendorCode) {
+    switch(error) {
         case FINGERPRINT_ERROR_HW_UNAVAILABLE:
             return FingerprintError::ERROR_HW_UNAVAILABLE;
         case FINGERPRINT_ERROR_UNABLE_TO_PROCESS:
@@ -176,10 +176,9 @@ FingerprintError BiometricsFingerprint::VendorErrorFilter(int32_t error, int32_t
 
 // Translate acquired messages returned by traditional HAL (see fingerprint.h)
 // to HIDL-compliant FingerprintAcquiredInfo.
-FingerprintAcquiredInfo BiometricsFingerprint::VendorAcquiredFilter(int32_t info,
-                                                                    int32_t* vendorCode) {
-    *vendorCode = 0;
-    switch (info) {
+FingerprintAcquiredInfo BiometricsFingerprint::VendorAcquiredFilter(
+        int32_t info, int32_t* vendorCode) {
+    switch(info) {
         case FINGERPRINT_ACQUIRED_GOOD:
             return FingerprintAcquiredInfo::ACQUIRED_GOOD;
         case FINGERPRINT_ACQUIRED_PARTIAL:
@@ -225,6 +224,7 @@ Return<RequestStatus> BiometricsFingerprint::enroll(const hidl_array<uint8_t, 69
 }
 
 Return<RequestStatus> BiometricsFingerprint::postEnroll() {
+    getInstance()->onFingerUp();
     return ErrorFilter(mDevice->post_enroll(mDevice));
 }
 
@@ -233,6 +233,7 @@ Return<uint64_t> BiometricsFingerprint::getAuthenticatorId() {
 }
 
 Return<RequestStatus> BiometricsFingerprint::cancel() {
+    getInstance()->onFingerUp();
     return ErrorFilter(mDevice->cancel(mDevice));
 }
 
@@ -373,6 +374,7 @@ void BiometricsFingerprint::notify(const fingerprint_msg_t* msg) {
                              .isOk()) {
                     ALOGE("failed to invoke fingerprint onAuthenticated callback");
                 }
+                getInstance()->onFingerUp();
             } else {
                 // Not a recognized fingerprint
                 if (!thisPtr->mClientCallback
