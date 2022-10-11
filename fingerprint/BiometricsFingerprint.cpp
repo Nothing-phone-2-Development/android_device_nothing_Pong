@@ -352,10 +352,12 @@ Return<bool> BiometricsFingerprint::isUdfps(uint32_t /* sensorId */) {
 
 Return<void> BiometricsFingerprint::onFingerDown(uint32_t /* x */, uint32_t /* y */,
                                                  float /* minor */, float /* major */) {
+    mDevice->goodixExtCmd(mDevice, 1, 0);
     return Void();
 }
 
 Return<void> BiometricsFingerprint::onFingerUp() {
+    mDevice->goodixExtCmd(mDevice, 0, 0);
     return Void();
 }
 
