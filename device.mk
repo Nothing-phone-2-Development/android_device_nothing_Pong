@@ -31,6 +31,11 @@ PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 TARGET_SCREEN_HEIGHT := 2376
 TARGET_SCREEN_WIDTH := 1080
 
+# Init
+PRODUCT_PACKAGES += \
+    fstab.qcom \
+    fstab.qcom.vendor_ramdisk
+
 # Partitions
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
 
