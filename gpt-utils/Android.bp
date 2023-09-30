@@ -47,6 +47,5 @@ cc_library {
     export_include_dirs: ["."],
     header_libs: [
             "qti_kernel_headers",
-            "device_kernel_headers",
     ],
 }
