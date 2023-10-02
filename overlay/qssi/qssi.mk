@@ -6,6 +6,7 @@
 
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
+    NTWifiResCommon \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon
