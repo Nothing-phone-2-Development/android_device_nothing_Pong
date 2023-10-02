@@ -61,6 +61,11 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+DEVICE_PATH := device/nothing/Pong
+
+# Overlays QSSI
+$(call inherit-product, $(DEVICE_PATH)/overlay/qssi/qssi.mk)
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
