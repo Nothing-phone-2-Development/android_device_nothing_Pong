@@ -307,6 +307,11 @@ PRODUCT_PACKAGES += \
     TelephonyResCommon \
     WifiResCommon
 
+# TARO overlays
+PRODUCT_PACKAGES += \
+    FrameworksResTarget \
+    WifiResTarget
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
