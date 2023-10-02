@@ -302,6 +302,7 @@ PRODUCT_PACKAGES += \
 # QSSI overlays
 PRODUCT_PACKAGES += \
     FrameworksResCommon \
+    NTWifiResCommon \
     SystemUIResCommon \
     TelephonyResCommon \
     WifiResCommon
