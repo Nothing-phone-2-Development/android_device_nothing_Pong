@@ -66,6 +66,9 @@ DEVICE_PATH := device/nothing/Pong
 # Overlays QSSI
 $(call inherit-product, $(DEVICE_PATH)/overlay/qssi/qssi.mk)
 
+# Overlays TARO
+$(call inherit-product, $(DEVICE_PATH)/overlay/taro/taro.mk)
+
 # Project ID Quota
 $(call inherit-product, $(SRC_TARGET_DIR)/product/emulated_storage.mk)
 
