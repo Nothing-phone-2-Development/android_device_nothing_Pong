@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+     Copyright (C) 2023 The LineageOS Project
+     SPDX-License-Identifier: Apache-2.0
+-->
+<resources>
+
+    <!-- Height of the status bar.
+         Do not read this dimen directly. Use {@link SystemBarUtils#getStatusBarHeight} instead.
+         -->
+    <dimen name="status_bar_height">126.0px</dimen>
+    <dimen name="status_bar_height_default">126.0px</dimen>
+    <dimen name="status_bar_height_landscape">36.0dip</dimen>
+    <dimen name="status_bar_height_portrait">126.0px</dimen>
+
+</resources>
