@@ -347,6 +347,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     NTCarrierConfigResTarget \
     NTFrameworksResTarget \
+    NTSettingsProviderResTarget \
     NTSettingsResTarget \
     NTSystemUIResTarget
 
