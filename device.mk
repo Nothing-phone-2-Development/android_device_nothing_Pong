@@ -301,6 +301,7 @@ PRODUCT_PACKAGES += \
 
 # QSSI overlays
 PRODUCT_PACKAGES += \
+    CarrierConfigResCommon \
     FrameworksResCommon \
     NTWifiResCommon \
     SystemUIResCommon \
@@ -314,6 +315,7 @@ PRODUCT_PACKAGES += \
 
 # PONG overlays
 PRODUCT_PACKAGES += \
+    NTCarrierConfigResTarget \
     NTFrameworksResTarget \
     NTSettingsResTarget \
     NTSystemUIResTarget
