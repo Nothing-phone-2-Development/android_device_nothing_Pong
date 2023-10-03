@@ -5,6 +5,7 @@
 #
 
 PRODUCT_PACKAGES += \
+    CarrierConfigResCommon \
     FrameworksResCommon \
     NTWifiResCommon \
     SystemUIResCommon \

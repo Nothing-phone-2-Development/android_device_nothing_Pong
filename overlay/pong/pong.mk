@@ -5,6 +5,7 @@
 #
 
 PRODUCT_PACKAGES += \
+    NTCarrierConfigResTarget \
     NTFrameworksResTarget \
     NTSettingsResTarget \
     NTSystemUIResTarget
