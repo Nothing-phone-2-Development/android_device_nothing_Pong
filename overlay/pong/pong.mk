@@ -7,5 +7,6 @@
 PRODUCT_PACKAGES += \
     NTCarrierConfigResTarget \
     NTFrameworksResTarget \
+    NTSettingsProviderResTarget \
     NTSettingsResTarget \
     NTSystemUIResTarget
