@@ -61,6 +61,10 @@ PRODUCT_PACKAGES += \
 # Overlays
 PRODUCT_ENFORCE_RRO_TARGETS := *
 
+# Overlays Lineage
+DEVICE_PACKAGE_OVERLAYS += \
+    $(LOCAL_PATH)/overlay-lineage
+
 DEVICE_PATH := device/nothing/Pong
 
 # Overlays QSSI
