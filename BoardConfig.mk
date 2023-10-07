@@ -67,9 +67,11 @@ BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
 BOARD_RAMDISK_USE_LZ4 := true
 
 # DTB / DTBO
-BOARD_INCLUDE_DTB_IN_BOOTIMG := true
-BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
-TARGET_NEEDS_DTBOIMAGE := true
+#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+#BOARD_USES_QCOM_MERGE_DTBS_SCRIPT := true
+#TARGET_NEEDS_DTBOIMAGE := true
+TARGET_KERNEL_DIR := $(DEVICE_PATH)-kernel
+BOARD_PREBUILT_DTBOIMAGE := $(TARGET_KERNEL_DIR)/dtbo.img
 
 # Display
 TARGET_SCREEN_DENSITY := 420
@@ -97,11 +99,13 @@ BOARD_KERNEL_BASE := 0x00000000
 BOARD_KERNEL_PAGESIZE := 4096
 BOARD_KERNEL_IMAGE_NAME := Image
 
+KERNEL_LTO := none
+
 TARGET_KERNEL_SOURCE := kernel/nothing/sm8475
 TARGET_KERNEL_CONFIG := \
     gki_defconfig \
     vendor/waipio_GKI.config \
-    vendor/nothing/waipio_GKI.config
+    vendor/aging.config
 
 # Kernel modules
 BOARD_VENDOR_KERNEL_MODULES_BLOCKLIST_FILE := $(DEVICE_PATH)/modules.blocklist
@@ -110,6 +114,25 @@ BOARD_VENDOR_RAMDISK_KERNEL_MODULES_BLOCKLIST_FILE := $(BOARD_VENDOR_KERNEL_MODU
 BOARD_VENDOR_RAMDISK_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.vendor_boot))
 BOARD_VENDOR_RAMDISK_RECOVERY_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
 BOOT_KERNEL_MODULES := $(strip $(shell cat $(DEVICE_PATH)/modules.load.recovery))
+
+TARGET_KERNEL_EXT_MODULE_ROOT := kernel/nothing/sm8475-modules
+TARGET_KERNEL_EXT_MODULES := \
+  qcom/mmrm-driver \
+  qcom/audio-kernel \
+  qcom/camera-kernel \
+  qcom/dataipa/drivers/platform/msm \
+  qcom/datarmnet/core \
+  qcom/datarmnet-ext/aps \
+  qcom/datarmnet-ext/offload \
+  qcom/datarmnet-ext/shs \
+  qcom/datarmnet-ext/perf \
+  qcom/datarmnet-ext/perf_tether \
+  qcom/datarmnet-ext/sch \
+  qcom/datarmnet-ext/wlan \
+  qcom/display-drivers/msm \
+  qcom/eva-kernel \
+  qcom/video-driver \
+  qcom/wlan/qcacld-3.0/.qca6490
 
 # Metadata
 BOARD_USES_METADATA_PARTITION := true
