@@ -1,42 +1,23 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
 ## are from Nothing Phone (2) (2.0.3).
 
-# NTF (not sure what this stands for)
-vendor/bin/ntf-service
-vendor/etc/init/init.ntf.rc
-
 # ACDBs
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_acdb_cal.acdb
-vendor/etc/acdbdata/IDP_UPD/IDP_UPD_workspaceFileXml.qwsp
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.10.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.3.0_0.1__3.0.0_0.0__eai_1.36_enpu2_comp.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.20_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_ns_models/fai__2.7.2_0.0__3.0.0_0.0__eai_1.36_enpu2.pmd
 vendor/etc/acdbdata/nn_vad_models/fai__3.0.0_0.0__eai_1.36_enpu2.pmd
-vendor/etc/acdbdata/ukee_cdp/CDP_ukee_acdb_cal.acdb
-vendor/etc/acdbdata/ukee_cdp/CDP_ukee_workspaceFileXml.qwsp
-vendor/etc/acdbdata/ukee_mtp/MTP_ukee_acdb_cal.acdb
-vendor/etc/acdbdata/ukee_mtp/MTP_ukee_workspaceFileXml.qwsp
-vendor/etc/acdbdata/ukee_qrd/QRD_ukee_acdb_cal.acdb
-vendor/etc/acdbdata/ukee_qrd/QRD_ukee_workspaceFileXml.qwsp
-vendor/etc/acdbdata/waipio_cdp/CDP_acdb_cal.acdb
-vendor/etc/acdbdata/waipio_cdp/CDP_workspaceFileXml.qwsp
-vendor/etc/acdbdata/waipio_mtp/MTP_acdb_cal.acdb
-vendor/etc/acdbdata/waipio_mtp/MTP_workspaceFileXml.qwsp
 vendor/etc/acdbdata/waipio_qrd/QRD_acdb_cal.acdb
 vendor/etc/acdbdata/waipio_qrd/QRD_workspaceFileXml.qwsp
 
 # ADSP
 vendor/bin/adsprpcd
-vendor/bin/dspservice
 vendor/etc/init/vendor.qti.adsprpc-guestos-service.rc
 vendor/etc/init/vendor.qti.audio-adsprpc-service.rc
-vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
-vendor/etc/models/acd/event.eai
-vendor/etc/models/acd/music.eai
-vendor/etc/models/acd/speech.eai
-vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+vendor/lib64/libadsp_default_listener.so
+vendor/lib64/libadsprpc.so
+vendor/lib64/libloadalgo_stub.so
 
 # ADSP modules
 vendor/lib/rfsa/adsp/bm2n00.bin
@@ -134,9 +115,75 @@ vendor/lib/rfsa/adsp/libvpt_action_recognition.so
 vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 
 # Audio
+vendor/etc/models/acd/event.eai
+vendor/etc/models/acd/music.eai
+vendor/etc/models/acd/speech.eai
+vendor/lib/hw/audio.primary.taro.so
+vendor/lib/libar-acdb.so
+vendor/lib/libar-gpr.so
+-vendor/lib/libar-gsl.so
+-vendor/lib/libar-pal.so
+-vendor/lib/libats.so
+vendor/lib/libcapiv2svacnnvendor.so
+vendor/lib/libcapiv2svarnnvendor.so
+vendor/lib/libcapiv2uvvendor.so
+vendor/lib/libfmpal.so
+vendor/lib/liblistensoundmodel2vendor.so
+vendor/lib/liblx-ar_util.so
+-vendor/lib/liblx-osal.so
+vendor/lib/libmcs.so
+vendor/lib/libqtigefar.so
 vendor/lib64/hw/audio.primary.taro.so
+vendor/lib64/hw/sound_trigger.primary.taro.so
+vendor/lib64/libAlacSwDec.so
+vendor/lib64/libApeSwDec.so
+vendor/lib64/libEvrcSwCodec.so
+vendor/lib64/libFlacSwDec.so
 vendor/lib64/lib_lvacfs.so
+vendor/lib64/libadm.so
+vendor/lib64/libar-acdb.so
+vendor/lib64/libar-gpr.so
+-vendor/lib64/libar-gsl.so
+-vendor/lib64/libar-pal.so
+-vendor/lib64/libats.so
+vendor/lib64/libaudio_log_utils.so
+vendor/lib64/libcapiv2svacnnvendor.so
+vendor/lib64/libcapiv2svarnnvendor.so
+vendor/lib64/libcapiv2uvvendor.so
+vendor/lib64/libdsd2pcm.so
+vendor/lib64/libeai_fixed.so
+vendor/lib64/libeai_float.so
+vendor/lib64/libfmpal.so
+vendor/lib64/liblistensoundmodel2vendor.so
 vendor/lib64/liblvacfs_wrapper.so
+vendor/lib64/liblx-ar_util.so
+-vendor/lib64/liblx-osal.so
+vendor/lib64/libmcs.so
+vendor/lib64/libqtigefar.so
+vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
+vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.pal@1.0.so
+
+# Audio AGM
+vendor/bin/agmcap
+vendor/bin/agmcompressplay
+vendor/bin/agmplay
+vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
+-vendor/lib/libagm.so
+-vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
+-vendor/lib64/libagm.so
+vendor/lib64/libagm_compress_plugin.so
+vendor/lib64/libagm_mixer_plugin.so
+vendor/lib64/libagm_pcm_plugin.so
+vendor/lib64/libagmclient.so
+vendor/lib64/libagmmixer.so
+-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
+vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
+
+# Audio FX modules
+vendor/lib64/soundfx/libasphere.so
+vendor/lib64/soundfx/libshoebox.so
 
 # Audio firmware
 vendor/firmware/stereo.cnt
@@ -186,66 +233,13 @@ vendor/etc/lvacfs_params/4mic/LVIMFS_Parameter_xxxx_ID4_MIC_Cam_back.txt
 vendor/etc/lvacfs_params/4mic/audiozoom_13.txt
 vendor/etc/lvacfs_params/4mic/audiozoom_4.txt
 
-# Audio AGM
-vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
--vendor/lib/libagm.so
--vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
--vendor/lib64/libagm.so
-vendor/lib64/libagmclient.so
-vendor/lib64/libagmmixer.so
--vendor/lib64/vendor.qti.hardware.AGMIPC@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.AGMIPC@1.0.so
-
-# Audio-libraries
--vendor/lib/libar-pal.so
-vendor/lib64/libadm.so
-vendor/lib64/libadsp_default_listener.so
-vendor/lib64/libadsprpc.so
-vendor/lib64/libar-acdb.so
-vendor/lib64/libar-gpr.so
-vendor/lib64/libar-gsl.so
--vendor/lib64/libar-pal.so
-vendor/lib64/libats.so
-vendor/lib64/libaudio_log_utils.so
-vendor/lib64/libbatterylistener.so
-vendor/lib64/libcapiv2svacnnvendor.so
-vendor/lib64/libcapiv2svarnnvendor.so
-vendor/lib64/libcapiv2uvvendor.so
-vendor/lib64/libfmpal.so
-vendor/lib64/liblx-ar_util.so
-vendor/lib64/liblx-osal.so
-vendor/lib64/libmcs.so
-vendor/lib64/libqtigefar.so
-vendor/lib64/soundfx/libasphere.so
-vendor/lib64/soundfx/libaudiopreprocessing.so
-vendor/lib64/soundfx/libbundlewrapper.so
-vendor/lib64/soundfx/libdownmix.so
-vendor/lib64/soundfx/libdynproc.so
-vendor/lib64/soundfx/libeffectproxy.so
-vendor/lib64/soundfx/libhapticgenerator.so
-vendor/lib64/soundfx/libldnhncr.so
-vendor/lib64/soundfx/libqcompostprocbundle.so
-vendor/lib64/soundfx/libqcomvisualizer.so
-vendor/lib64/soundfx/libqcomvoiceprocessing.so
-vendor/lib64/soundfx/libreverbwrapper.so
-vendor/lib64/soundfx/libshoebox.so
-vendor/lib64/soundfx/libvisualizer.so
-vendor/lib64/vendor.qti.hardware.dsp@1.0.so
-vendor/lib64/vendor.qti.hardware.pal@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.pal@1.0.so
-
-# Audio Listen
-vendor/lib64/hw/sound_trigger.primary.taro.so
-vendor/lib64/libeai_fixed.so
-vendor/lib64/libeai_float.so
-vendor/lib64/liblistensoundmodel2vendor.so
-vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0-impl.so
-vendor/lib64/vendor.qti.hardware.ListenSoundModel@1.0.so
-
 # Bluetooth
 vendor/bin/hw/android.hardware.bluetooth@1.0-service-qti
 vendor/etc/init/android.hardware.bluetooth@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.bluetooth@1.0-impl-qti.so
+vendor/lib64/lib_bt_aptx.so
+vendor/lib64/lib_bt_ble.so
+vendor/lib64/lib_bt_bundle.so
 vendor/lib64/libbtnv.so
 vendor/lib64/libsoc_helper.so
 
@@ -258,6 +252,7 @@ vendor/lib64/hw/vendor.qti.hardware.btconfigstore@1.0-impl.so
 vendor/lib64/hw/vendor.qti.hardware.btconfigstore@2.0-impl.so
 vendor/lib64/libbluetooth_audio_session_qti.so
 vendor/lib64/libbluetooth_audio_session_qti_2_1.so
+vendor/lib64/libbt-hidlclient.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
@@ -763,6 +758,13 @@ vendor/firmware/evass.b19
 vendor/firmware/evass.mbn
 vendor/firmware/evass.mdt
 vendor/firmware/gmu_gen70000.bin
+
+# DSP
+vendor/bin/dspservice
+vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
+vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
+vendor/lib/vendor.qti.hardware.dsp@1.0.so
+vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # Diag
 system_ext/lib64/vendor.qti.diaghal@1.0.so
