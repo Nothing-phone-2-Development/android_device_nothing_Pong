@@ -99,6 +99,8 @@ on post-fs-data
     mkdir /vendor/data/tombstones 0771 system system
     # Enable WLAN cold boot calibration
     write /sys/kernel/cnss/fs_ready 1
+    # Enable WLAN SSR
+    write /sys/kernel/cnss/recovery 1
 
 on early-boot
     start vendor.sensors
