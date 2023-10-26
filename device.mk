@@ -258,6 +258,7 @@ PRODUCT_PACKAGES += \
     init.qcom.usb.rc \
     init.qcom.usb.sh \
     init.target.rc \
+    ueventd.nt.rc \
     ueventd.qcom.rc
 
 # Keymaster
@@ -307,7 +308,7 @@ PRODUCT_PACKAGES += \
 
 # NFC
 PRODUCT_PACKAGES += \
-    android.hardware.nfc_snxxx@1.2-service \
+    android.hardware.nfc@1.2-service.pn8x \
     android.hardware.secure_element@1.2.vendor \
     com.android.nfc_extras \
     Tag
@@ -416,7 +417,9 @@ PRODUCT_SHIPPING_API_LEVEL := 33
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += \
-    $(LOCAL_PATH)
+    $(LOCAL_PATH) \
+    vendor/nxp/nfc \
+    vendor/nxp/secure_element
 
 # Telephony
 PRODUCT_PACKAGES += \
