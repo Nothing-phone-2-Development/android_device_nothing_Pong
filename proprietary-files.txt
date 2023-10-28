@@ -1322,6 +1322,7 @@ vendor/lib64/libQnnSystem.so
 vendor/lib64/libhta_hexagon_runtime_qnn.so
 
 # NFC
+vendor/libnfc-nxp_RF.conf
 vendor/etc/libnfc-nci.conf
 vendor/etc/libnfc-nxp.conf
 
