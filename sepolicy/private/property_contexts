@@ -1,0 +1,5 @@
+# Fingerprint
+fingerprint.disable.study                   u:object_r:system_fingerprint_prop:s0
+persist.vendor.overlay.fp_model             u:object_r:system_fingerprint_prop:s0
+persist.vendor.overlay.fp_serial            u:object_r:system_fingerprint_prop:s0
+persist.vendor.overlay.fp_vendor            u:object_r:system_fingerprint_prop:s0
