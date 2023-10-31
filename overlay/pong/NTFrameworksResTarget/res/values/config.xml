@@ -199,20 +199,13 @@
          appended after the path string to interpret coordinates in dp instead of px units.
          Note that a physical cutout should be configured in pixels for the best results.
          -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutout">M540.2,33C524.1,33 511,46.1 511,62.3C511,78.4 524.1,91.5 540.2,91.5C556.4,91.5 569.5,78.4 569.5,62.3C569.5,46.1 556.4,33 540.2,33ZM540.2,83.8C528.3,83.8 518.8,74.1 518.8,62.3C518.8,50.5 528.4,40.9 540.2,40.9C552,40.9 561.7,50.5 561.7,62.3C561.7,74.1 552,83.8 540.2,83.8Z @left</string>
- 
-    <!-- Like config_mainBuiltInDisplayCutout, but this path is used to report the
-         one single bounding rect per device edge to the app via
-         {@link DisplayCutout#getBoundingRect}. Note that this path should try to match the visual
-         appearance of the cutout as much as possible, and may be smaller than
-         config_mainBuiltInDisplayCutout
-         -->
-    <string translatable="false" name="config_mainBuiltInDisplayCutoutRectApproximation">M454.0, 0.0 h 86.0 v 126 h -86.0 Z @left</string>
+    <string translatable="false" name="config_mainBuiltInDisplayCutout">
+        M -38,0
+        L -38,107
+        L 38,107
+        L 38,0 Z
+    </string>
 
-    <!-- Whether the display cutout region of the main built-in display should be forced to
-         black in software (to avoid aliasing or emulate a cutout that is not physically existent).
-         -->
-    <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
     <!-- When each intermediate UDFPS enroll stage ends, as a fraction of total progress. -->
     <string-array name="config_udfps_enroll_stage_thresholds" translatable="false">
