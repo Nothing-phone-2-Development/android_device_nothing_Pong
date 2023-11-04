@@ -2166,6 +2166,13 @@
         <ctl name="ADC4 Volume" value="6" />
     </path>
 
+    <path name="handset-mic-ull">
+        <path name="amic1" />
+        <path name="amic5" />
+        <ctl name="ADC1 Volume" value="18" />
+        <ctl name="ADC4 Volume" value="18" />
+    </path>
+
     <path name="handset-mic-unprocessed">
        <path name="dmic2" />
        <ctl name="TX_DEC2 Volume" value="102" />

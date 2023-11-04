@@ -1,5 +1,5 @@
 ## All proprietary files from this list, unless pinned and noted otherwise,
-## are from Nothing Phone (2) (2.0.3).
+## are from Nothing Phone (2) (2.0.4).
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
@@ -229,7 +229,6 @@ vendor/etc/lvacfs_params/4mic/LVIMFS_Parameter_xxxx_ID1_MIC_HDR_standard.txt
 vendor/etc/lvacfs_params/4mic/LVIMFS_Parameter_xxxx_ID2_MIC_HDR_voicefocus.txt
 vendor/etc/lvacfs_params/4mic/LVIMFS_Parameter_xxxx_ID3_MIC_HDR_wideband.txt
 vendor/etc/lvacfs_params/4mic/LVIMFS_Parameter_xxxx_ID4_MIC_Cam_back.txt
-vendor/etc/lvacfs_params/4mic/audiozoom_13.txt
 vendor/etc/lvacfs_params/4mic/audiozoom_4.txt
 
 # Bluetooth
@@ -257,6 +256,9 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # Camera
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
+vendor/etc/camera/AI_Seg_v0.2.29.1_nothing.bin
+vendor/etc/camera/CFR_para4_Nothing_M_v100-8_AI.bin
+vendor/etc/camera/CFR_para4_Nothing_UW_v101-5_AI.bin
 vendor/etc/camera/camerainfo.xml
 vendor/etc/camera/camxoverridesettings.txt
 vendor/etc/camera/default_params.xml
@@ -483,6 +485,7 @@ vendor/lib64/hw/camera.qcom.so
 vendor/lib64/hw/com.qti.chi.override.so
 vendor/lib64/libPlatformValidatorShared.so
 vendor/lib64/libaidenoiser.so
+vendor/lib64/libalCFR.so
 vendor/lib64/libarcsoft_aiscenedetection.so
 vendor/lib64/libarcsoft_base_utils.so
 vendor/lib64/libarcsoft_beautyshot.so

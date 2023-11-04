@@ -209,6 +209,7 @@
             </usecase>
             <usecase>
                 <name>PAL_STREAM_ULTRA_LOW_LATENCY</name>
+                <snd_device_name>handset-mic-ull</snd_device_name>
             </usecase>
             <usecase>
                 <name>PAL_STREAM_RAW</name>
