@@ -5,6 +5,10 @@ persist.sys.brightness.low.gamma=true
 persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=6000
 
+# Camera
+persist.camera.privapp.list=com.nothing.camera
+persist.vendor.camera.privapp.list=com.nothing.camera
+
 # Dex2oat
 dalvik.vm.dex2oat64.enabled=true
 

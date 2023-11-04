@@ -5,5 +5,8 @@ audio.offload.min.duration.secs=30
 audio.offload.video=true
 ro.af.client_heap_size_kbyte=7168
 
+# Google Lens
+ro.com.google.lens.oem_camera_package=com.nothing.camera
+
 # GMS
 ro.opa.eligible_device=true

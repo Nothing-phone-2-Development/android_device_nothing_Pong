@@ -241,6 +241,12 @@ vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.0.so
 vendor/lib64/vendor.qti.hardware.bluetooth_sar@1.1.so
 
 # Camera
+system/etc/permissions/NTCamera-google-permissions.xml
+system/etc/permissions/NTCamera-permissions.xml
+system/etc/permissions/privapp-permissions-platform.xml:system/etc/permissions/privapp-permissions-platform-nothing.xml
+system/etc/sysconfig/com.nothing.experimental.xml
+system/priv-app/NothingExperience/NothingExperience.apk
+system/etc/permissions/privapp-permissions-NothingExperience.xml
 vendor/bin/hw/vendor.qti.camera.provider@2.7-service_64
 vendor/etc/camera/AI_Seg_v0.2.29.1_nothing.bin
 vendor/etc/camera/CFR_para4_Nothing_M_v100-8_AI.bin
@@ -583,6 +589,7 @@ vendor/lib64/libubifocus.so
 vendor/lib64/libvideoml.so
 vendor/lib64/vendor.qti.hardware.camera.aon@1.0-service-impl.so
 vendor/lib64/vendor.qti.hardware.camera.postproc@1.0-service-impl.so
+vendor/system/priv-app/NTCamera/NTCamera.apk:system/priv-app/NTCamera/NTCamera.apk
 
 # Camera firmware
 vendor/firmware/CAMERA_ICP.b00
