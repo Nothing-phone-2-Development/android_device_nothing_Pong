@@ -23,6 +23,9 @@
         <boolean name="show_ims_registration_status_bool" value="false" />
         <boolean name="vonr_on_by_default_bool" value="false" />
         <boolean name="world_mode_enabled_bool" value="false" />
+        <!-- Allow VoLTE and WFC by default -->
+        <boolean name="carrier_volte_available_bool" value="true" />
+        <boolean name="carrier_wfc_ims_available_bool" value="true" />
     </carrier_config>
     <carrier_config mcc="001" mnc="01">
         <boolean name="call_barring_visibility_bool" value="true" />
@@ -1980,5 +1983,10 @@
         <int-array name="carrier_nr_availabilities_int_array" num="1">
             <item value="2" />
         </int-array>
+    </carrier_config>
+    <!-- Do not allow VoLTE on TIM Brazil -->
+    <carrier_config mcc="724" mnc="02,03,04">
+        <boolean name="carrier_volte_available_bool" value="false" />
+        <boolean name="carrier_wfc_ims_available_bool" value="false" />
     </carrier_config>
 </carrier_config_list>
