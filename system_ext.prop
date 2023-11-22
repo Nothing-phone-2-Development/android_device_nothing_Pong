@@ -36,6 +36,10 @@ persist.data.df.agg.dl_pkt=10
 persist.data.df.agg.dl_size=4096
 persist.vendor.data.mode=concurrent
 
+# Nothing feature
+ro.build.nothing.feature.base=0x14245b9fff
+ro.build.nothing.feature.diff.device.Pong=0x3d1a42000
+
 # Radio
 ril.subscription.types=NV,RUIM
 
