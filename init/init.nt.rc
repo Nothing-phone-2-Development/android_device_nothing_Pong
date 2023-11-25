@@ -15,8 +15,3 @@ on boot
     write /sys/devices/platform/goodix_ts.0/gesture/fod_en 1
     chown system system /sys/devices/platform/goodix_ts.0/gesture/single_en
     write /sys/devices/platform/goodix_ts.0/gesture/single_en 1
-
-    # Vibrator
-    chown system system /sys/class/leds/vibrator/activate
-    chown system system /sys/class/leds/vibrator/duration
-    chown system system /sys/class/leds/vibrator/state
