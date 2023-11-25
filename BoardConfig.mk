@@ -63,11 +63,6 @@ TARGET_USES_QCOM_MM_AUDIO := true
 # Bootloader
 TARGET_BOOTLOADER_BOARD_NAME := taro
 
-# Boot control
-SOONG_CONFIG_NAMESPACES += ufsbsg
-SOONG_CONFIG_ufsbsg += ufsframework
-SOONG_CONFIG_ufsbsg_ufsframework := bsg
-
 # Boot
 BOARD_BOOT_HEADER_VERSION := 4
 BOARD_MKBOOTIMG_ARGS += --header_version $(BOARD_BOOT_HEADER_VERSION)
