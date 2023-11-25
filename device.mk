@@ -58,18 +58,12 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audioadsprpcd \
     libbatterylistener \
-    libeffectproxy \
-    libhapticgenerator \
     libhfp_pal \
-    libldnhncr \
     libqcompostprocbundle \
     libqcomvisualizer \
     libqcomvoiceprocessing \
-    libreverbwrapper \
-    libstdc++.vendor \
     libsndcardparser \
     libtinycompress \
-    libvisualizer \
     libvolumelistener \
     vendor.qti.hardware.AGMIPC@1.0-service \
     vendor.qti.hardware.pal@1.0-impl
