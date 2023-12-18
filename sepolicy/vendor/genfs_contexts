@@ -1,11 +1,3 @@
-# Extcon
-genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:lpass-cdc/wcd938x-codec/extcon/extcon3/cable.0/name   u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:lpass-cdc/wcd938x-codec/extcon/extcon3/cable.1/name   u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:lpass-cdc/wcd938x-codec/extcon/extcon3/cable.2/name   u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/soc/soc:spf_core_platform/soc:spf_core_platform:lpass-cdc/wcd938x-codec/extcon/extcon3/cable.3/name   u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/extcon/extcon4/cable.0/name   u:object_r:sysfs_extcon:s0
-genfscon sysfs /devices/platform/soc/soc:qcom,pmic_glink/soc:qcom,pmic_glink:qcom,battery_charger/extcon/extcon4/cable.1/name   u:object_r:sysfs_extcon:s0
-
 # Gestures
 genfscon sysfs /devices/platform/goodix_ts.0/fp_state               u:object_r:vendor_sysfs_sensors:s0
 genfscon sysfs /devices/platform/goodix_ts.0/single_tap             u:object_r:vendor_sysfs_sensors:s0
