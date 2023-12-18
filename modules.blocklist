@@ -61,6 +61,5 @@ blocklist vsock
 blocklist torture
 blocklist locktorture
 blocklist rcutorture
-blocklist mmrm_test_module
 blocklist q5drv_linux
 blocklist limits_stat
