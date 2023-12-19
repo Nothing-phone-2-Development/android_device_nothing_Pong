@@ -6,7 +6,7 @@ persist.bluetooth.bqr.min_interval_ms=6000
 dalvik.vm.dex2oat64.enabled=true
 
 # Display
-debug.sf.enable_hwc_vds=1
+debug.sf.enable_hwc_vds=0
 
 # CNE
 persist.vendor.cne.feature=1
@@ -37,8 +37,8 @@ persist.data.df.agg.dl_size=4096
 persist.vendor.data.mode=concurrent
 
 # Nothing feature
-ro.build.nothing.feature.base=0x14245b9fff
-ro.build.nothing.feature.diff.device.Pong=0x3d1a42000
+ro.build.nothing.feature.base=0x104b4245b9fff
+ro.build.nothing.feature.diff.device.Pong=0x4803d9a42800
 
 # Radio
 ril.subscription.types=NV,RUIM

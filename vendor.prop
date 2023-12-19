@@ -121,6 +121,7 @@ vendor.display.disable_system_load_check=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
 vendor.display.enable_dpps_dynamic_fps=1
+vendor.display.enable_display_extensions=1
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_hdr10_gpu_target=1
 vendor.display.enable_optimize_refresh=1
@@ -142,6 +143,10 @@ vendor.gatekeeper.disable_spu=true
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
+debug.sf.early_phase_offset_ns=1000000
+debug.sf.early_gl_phase_offset_ns=1000000
+debug.sf.early_app_phase_offset_ns=4000000
+debug.sf.early_gl_app_phase_offset_ns=4000000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
@@ -166,6 +171,9 @@ ro.surface_flinger.wcg_composition_dataspace=143261696
 
 # Incremental FS
 ro.incremental.enable=yes
+
+# Keystore
+ro.hardware.keystore_desede=true
 
 # Media
 debug.c2.use_dmabufheaps=1
