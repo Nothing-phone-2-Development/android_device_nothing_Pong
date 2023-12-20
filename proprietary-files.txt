@@ -120,23 +120,7 @@ vendor/lib64/hw/com.dsi.ant@1.0-impl.so
 vendor/etc/models/acd/event.eai
 vendor/etc/models/acd/music.eai
 vendor/etc/models/acd/speech.eai
-vendor/lib/hw/audio.primary.taro.so
-vendor/lib/libar-acdb.so
-vendor/lib/libar-gpr.so
--vendor/lib/libar-gsl.so
 -vendor/lib/libar-pal.so
--vendor/lib/libats.so
-vendor/lib/libcapiv2svacnnvendor.so
-vendor/lib/libcapiv2svarnnvendor.so
-vendor/lib/libcapiv2uvvendor.so
-vendor/lib/libfmpal.so
-vendor/lib/liblistensoundmodel2vendor.so
-vendor/lib/liblx-ar_util.so
--vendor/lib/liblx-osal.so
-vendor/lib/libmcs.so
-vendor/lib/libpal_net_if.so
-vendor/lib/libpalclient.so
-vendor/lib/libqtigefar.so
 vendor/lib64/hw/audio.primary.taro.so
 vendor/lib64/hw/sound_trigger.primary.taro.so
 vendor/lib64/lib_lvacfs.so
@@ -172,8 +156,6 @@ vendor/bin/agmcap
 vendor/bin/agmcompressplay
 vendor/bin/agmplay
 vendor/bin/hw/vendor.qti.hardware.AGMIPC@1.0-service
--vendor/lib/libagm.so
--vendor/lib/vendor.qti.hardware.AGMIPC@1.0-impl.so
 -vendor/lib64/libagm.so
 vendor/lib64/libagm_compress_plugin.so
 vendor/lib64/libagm_mixer_plugin.so
@@ -883,7 +865,6 @@ vendor/lib64/vendor.qti.hardware.dpmservice@1.1.so
 vendor/bin/dspservice
 vendor/etc/init/vendor.qti.hardware.dsp@1.0-service.rc
 vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy
-vendor/lib/vendor.qti.hardware.dsp@1.0.so
 vendor/lib64/vendor.qti.hardware.dsp@1.0.so
 
 # EVA
@@ -986,8 +967,6 @@ vendor/firmware/goodixfp64.mdt
 # FM
 vendor/etc/init.qti.fm.sh
 vendor/etc/init/init.qti.fm.rc
-vendor/lib/hw/vendor.qti.hardware.fm@1.0-impl.so
-vendor/lib/vendor.qti.hardware.fm@1.0.so
 vendor/lib64/ftm_fm_lib.so
 vendor/lib64/hw/vendor.qti.hardware.fm@1.0-impl.so
 vendor/lib64/vendor.qti.hardware.fm@1.0.so
@@ -1312,7 +1291,6 @@ vendor/etc/seccomp_policy/codec2.vendor.base-arm64.policy
 vendor/etc/seccomp_policy/codec2.vendor.ext-arm64.policy
 vendor/etc/vintf/manifest/c2_manifest_vendor.xml
 vendor/etc/vintf/manifest/c2_manifest_vendor_audio.xml
-vendor/lib/libqconfigclient.so
 vendor/lib64/libQcelp13SwCodec.so
 vendor/lib64/libmmosal_vendor.so
 vendor/lib64/libqc2audio_base.so
@@ -1349,7 +1327,6 @@ vendor/lib64/vendor.qti.hardware.factory@1.0.so
 vendor/lib64/vendor.qti.hardware.factory@1.1.so
 
 # Memory
--vendor/lib/libvmmem.so
 -vendor/lib64/libvmmem.so
 
 # Native public libraries
@@ -1408,14 +1385,6 @@ vendor/etc/perf/testcommonresourceconfigs.xml
 vendor/etc/perf/testtargetresourceconfigs.xml
 vendor/etc/seccomp_policy/qapeservice.policy
 vendor/etc/vintf/manifest/vendor.qti.hardware.perf.xml
-vendor/lib/libperfconfig.so
-vendor/lib/libperfgluelayer.so
-vendor/lib/libperfioctl.so
-vendor/lib/libqti-perfd-client.so
-vendor/lib/libqti-perfd.so
-vendor/lib/libqti-util.so
-vendor/lib/libqti-utils.so
-vendor/lib/libskewknob.so
 vendor/lib64/liblearningmodule.so
 vendor/lib64/libmeters.so
 vendor/lib64/libperfconfig.so
@@ -1440,11 +1409,6 @@ vendor/etc/lm/QGPE.xml
 vendor/etc/lm/QGPEActionMap.xml
 vendor/etc/lm/SilkyScrollsFeature.xml
 vendor/etc/lm/sPLHFeature.xml
-vendor/lib/libpasrutils.so
-vendor/lib/libqti-iopd-client.so
-vendor/lib/libqti-iopd.so
-vendor/lib/vendor.qti.hardware.iop@1.0.so
-vendor/lib/vendor.qti.hardware.iop@2.0.so
 vendor/lib64/libadaptlaunch.so
 vendor/lib64/libapengine.so
 vendor/lib64/libappclassifier.so
@@ -1966,7 +1930,6 @@ vendor/etc/init/vendor.qti.tftp.rc
 vendor/bin/thermal-engine-v2
 vendor/etc/init/init_thermal-engine-v2.rc
 vendor/etc/thermal-engine.conf
--vendor/lib/libthermalclient.so
 -vendor/lib64/liblmthermallistner.so
 -vendor/lib64/libthermalclient.so
 
@@ -2018,7 +1981,6 @@ odm/etc/aac_richtap.config
 vendor/bin/hw/vendor.qti.hardware.vibrator.service
 vendor/etc/init/vendor.qti.hardware.vibrator.service.rc
 vendor/etc/vintf/manifest/vendor.qti.hardware.vibrator.service.xml
-vendor/lib/hw/vibrator.default.so
 vendor/lib64/hw/vibrator.default.so
 vendor/lib64/libaacvibrator.so
 vendor/lib64/libqtivibratoreffect.so
