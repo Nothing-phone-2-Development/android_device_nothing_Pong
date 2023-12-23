@@ -1,5 +1,0 @@
-# Fingerprint
-type vendor_goodix_data_file, file_type, data_file_type;
-
-# Vibrator
-type aac_richtap_device, dev_type;
