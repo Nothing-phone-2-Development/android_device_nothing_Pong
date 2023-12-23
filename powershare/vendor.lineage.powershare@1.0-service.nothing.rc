@@ -1,4 +1,4 @@
-on init
+on early-init
     chown system system /sys/class/qcom-battery/wireless_boost_en
 
 service vendor.powershare-hal-1-0 /vendor/bin/hw/vendor.lineage.powershare@1.0-service.nothing
