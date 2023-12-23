@@ -138,9 +138,6 @@
     -->
     <bool name="config_powerDecoupleAutoSuspendModeFromDisplay">true</bool>
 
-    <!-- Enable Zram writeback feature to allow unused pages in zram be written to flash. -->
-    <bool name="config_zramWriteback">true</bool>
-
     <!-- Flag specifying whether WFC over IMS should be available for carrier: independent of
          carrier provisioning. If false: hard disabled. If true: then depends on carrier
          provisioning, availability etc -->
@@ -222,14 +219,6 @@
         L 38,107
         L 38,0 Z
     </string>
-
-
-    <!-- When each intermediate UDFPS enroll stage ends, as a fraction of total progress. -->
-    <string-array name="config_udfps_enroll_stage_thresholds" translatable="false">
-        <item>0.25</item>
-        <item>0.5</item>
-        <item>0.55</item>
-    </string-array>
 
     <!-- The properties of a UDFPS sensor in pixels, in the order listed below: -->
     <integer-array name="config_udfps_sensor_props" translatable="false" >
