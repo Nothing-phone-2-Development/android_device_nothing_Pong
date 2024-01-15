@@ -1363,7 +1363,6 @@ vendor/lib64/libAlacSwDec.so
 vendor/lib64/libApeSwDec.so
 vendor/lib64/libEvrcSwCodec.so
 vendor/lib64/libFlacSwDec.so
-vendor/lib64/libdsd2pcm.so
 
 # Peripheral manager
 vendor/bin/pm-proxy
