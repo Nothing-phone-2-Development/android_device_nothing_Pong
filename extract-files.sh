@@ -66,6 +66,7 @@ function blob_fixup() {
             grep -q "android.hardware.security.rkp-V3-ndk.so" "${2}" || ${PATCHELF} --add-needed "android.hardware.security.rkp-V3-ndk.so" "${2}"
             ;;
         vendor/etc/wifi/qca6490/WCNSS_qcom_cfg.ini)
+            sed -i "s/oem_6g_support_disable=1/oem_6g_support_disable=0/" "${2}"
             sed -i '/gtsf_ptp_options=0xb/{
                 /# Disable FW TWT/!a\
 # Disable FW TWT
