@@ -6,6 +6,7 @@
 
 # Charger
 /sys/class/qcom-battery    charging_en          0660    system  system
+/sys/class/qcom-battery    scenario_fcc         0660    system  system
 /sys/class/qcom-battery    wireless_boost_en    0660    system  system
 /sys/class/qcom-battery    wls_reverse_status   0660    system  system
 

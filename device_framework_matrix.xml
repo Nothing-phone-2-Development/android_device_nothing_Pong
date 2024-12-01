@@ -8,4 +8,11 @@
             <instance>default</instance>
         </interface>
     </hal>
+    <hal format="aidl">
+        <name>vendor.nt.hardware.charge</name>
+        <interface>
+            <name>ICharge</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
 </compatibility-matrix>
