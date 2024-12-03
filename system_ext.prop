@@ -1,6 +1,3 @@
-# Brightness
-persist.sys.brightness.low.gamma=true
-
 # Bluetooth
 persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=6000
