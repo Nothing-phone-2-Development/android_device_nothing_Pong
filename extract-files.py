@@ -73,6 +73,12 @@ blob_fixups: blob_fixups_user_type = {
         .add_line_if_missing('gettid: 1'),
     'vendor/etc/seccomp_policy/qwesd@2.0.policy': blob_fixup()
         .add_line_if_missing('gettid: 1'),
+    ('vendor/lib64/libarcsoft_dark_vision_raw.so', 'vendor/lib64/libarcsoft_high_dynamic_range_v5.so'): blob_fixup()
+        .clear_symbol_version('remote_handle_close')
+        .clear_symbol_version('remote_handle_invoke')
+        .clear_symbol_version('remote_handle_open')
+        .clear_symbol_version('remote_register_buf_attr')
+        .clear_symbol_version('remote_register_buf'),
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()

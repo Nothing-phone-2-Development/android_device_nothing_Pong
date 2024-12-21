@@ -5,7 +5,6 @@
 # libar-pal depends on libagmclient, which is a gnu makefile target
 # libcne, libmasc, lowi-server, qms depend on libwpa_client, which is a gnu makefile target
 # libqc2audio_hwaudiocodec depends on libpalclient, which is a gnu makefile target
-# libarcsoft_dark_vision_raw, libarcsoft_high_dynamic_range_v5.so undefined symbol error on remote_register_dma_handle@SDSPRPC
 
 # ACDBs
 vendor/etc/acdbdata/nn_ns_models/fai__2.0.0_0.1__3.0.0_0.0__eai_1.36_enpu2.pmd
@@ -472,7 +471,7 @@ vendor/lib64/libalCFR.so
 vendor/lib64/libarcsoft_aiscenedetection.so
 vendor/lib64/libarcsoft_base_utils.so
 vendor/lib64/libarcsoft_beautyshot.so
-vendor/lib64/libarcsoft_dark_vision_raw.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_dark_vision_raw.so
 vendor/lib64/libarcsoft_dual_sat.so
 vendor/lib64/libarcsoft_dual_zoomtranslator.so
 vendor/lib64/libarcsoft_dualcam_refocus_image.so
@@ -480,7 +479,7 @@ vendor/lib64/libarcsoft_dualcam_refocus_video.so
 vendor/lib64/libarcsoft_facialrestoration.so
 vendor/lib64/libarcsoft_hdr_detection.so
 vendor/lib64/libarcsoft_high_dynamic_range.so
-vendor/lib64/libarcsoft_high_dynamic_range_v5.so;DISABLE_CHECKELF
+vendor/lib64/libarcsoft_high_dynamic_range_v5.so
 vendor/lib64/libarcsoft_low_light_hdr.so
 vendor/lib64/libarcsoft_mcxmflpolicy.so
 vendor/lib64/libarcsoft_night_video.so
