@@ -106,11 +106,10 @@ persist.vendor.dpm.vndr.idletimer.mode=default
 persist.vendor.dpm.vndr.tcm=2
 
 # Dirac
-ro.vendor.dirac.acs.forceAfm=true
-ro.vendor.dirac.acs.ignore_error=1
-ro.vendor.dirac.acs.startAtBoot=3
-ro.vendor.dirac.acs.storeSettings=1
-ro.vendor.dirac.startAtBoot=3
+persist.vendor.newdirac.dump=0
+persist.vendor.newdirac.enable.value=1.000000
+persist.vendor.newdirac.volume.value=0.000000
+persist.vendor.newdirac.cur.config=MUSIC
 
 # Display
 persist.sys.sf.native_mode=260
@@ -153,10 +152,6 @@ vendor.gatekeeper.disable_spu=true
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
-debug.sf.early_phase_offset_ns=1000000
-debug.sf.early_gl_phase_offset_ns=1000000
-debug.sf.early_app_phase_offset_ns=4000000
-debug.sf.early_gl_app_phase_offset_ns=4000000
 debug.sf.predict_hwc_composition_strategy=0
 debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
@@ -168,6 +163,7 @@ ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
 ro.opengles.version=196610
 ro.surface_flinger.force_hwc_copy_for_virtual_displays=true
+ro.surface_flinger.game_default_frame_rate_override=60
 ro.surface_flinger.has_HDR_display=true
 ro.surface_flinger.has_wide_color_display=true
 ro.surface_flinger.max_frame_buffer_acquired_buffers=3

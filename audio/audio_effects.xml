@@ -41,7 +41,7 @@
         <library name="volume_listener" path="libvolumelistener.so"/>
         <library name="audiosphere" path="libasphere.so"/>
         <!-- add for dirac support -->
-        <library name="dirac_gef" path="libdiraceffect-afm.so"/>
+        <library name="dirac" path="libdiraceffect_NT.so"/>
         <!-- add for dirac support -->
     </libraries>
     <effects>
@@ -90,7 +90,7 @@
         <effect name="notification_helper" library="volume_listener" uuid="0b776dde-0590-11e5-81ba-0025b32654a0"/>
         <effect name="audiosphere" library="audiosphere" uuid="184e62ab-2d19-4364-9d1b-c0a40733866c"/>
         <!-- add for dirac support -->
-        <effect name="dirac_afm" library="dirac_gef" uuid="743539F8-1076-451F-8395-84ACFAB0FAC7"/>
+        <effect name="dirac" library="dirac" uuid="ae737c63-f2c0-5457-909e-1e940c91b67b"/>
         <!-- add for dirac support -->
     </effects>
     <postprocess>
