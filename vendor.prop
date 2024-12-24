@@ -3,6 +3,7 @@ aaudio.hw_burst_min_usec=2000
 aaudio.mmap_exclusive_policy=2
 aaudio.mmap_policy=2
 af.fast_track_multiplier=1
+audio.deep_buffer.media=true
 audio.offload.video=true
 persist.vendor.audio.avs.afe_api_version=2
 persist.vendor.audio.fluence.speaker=true
@@ -10,11 +11,9 @@ persist.vendor.audio.fluence.voicecall=true
 persist.vendor.audio.ha_proxy.enabled=true
 persist.vendor.audio.spv3.enable=true
 persist.vendor.audio.voicecall.speaker.stereo=true
-persist.vendor.audio_hal.dsp_bit_width_enforce_mode=24
 ro.af.client_heap_size_kbyte=7168
 ro.audio.flinger_standbytime_ms=2000
-ro.vendor.audio.downmix.attenuation=1
-ro.vendor.audio.sdk.ssr=false
+ro.vendor.audio.sdk.fluencetype=none
 vendor.audio.adm.buffering.ms=2
 vendor.audio.c2.preferred=true
 vendor.audio.feature.a2dp_offload.enable=true
@@ -60,6 +59,8 @@ vendor.audio.volume.headset.gain.depcal=true
 vendor.audio_hal.in_period_size=144
 vendor.audio_hal.period_multiplier=3
 vendor.audio_hal.period_size=192
+vendor.qc2audio.per_frame.flac.dec.enabled=true
+vendor.qc2audio.suspend.enabled=true
 vendor.voice.path.for.pcm.voip=true
 
 # Bluetooth
@@ -71,6 +72,7 @@ bluetooth.hardware.power.rx_cur_ma=28
 bluetooth.hardware.power.tx_cur_ma=36
 bluetooth.profile.a2dp.source.enabled?=true
 bluetooth.profile.asha.central.enabled?=true
+bluetooth.profile.avrcp.controller.enabled?=true
 bluetooth.profile.avrcp.target.enabled?=true
 bluetooth.profile.bas.client.enabled?=true
 bluetooth.profile.gatt.enabled?=true
@@ -83,18 +85,24 @@ bluetooth.profile.pan.nap.enabled?=true
 bluetooth.profile.pan.panu.enabled?=true
 bluetooth.profile.pbap.server.enabled?=true
 bluetooth.profile.sap.server.enabled?=true
+persist.bluetooth.a2dp_offload.cap=sbc-aac-aptx-aptxhd-ldac
 persist.bluetooth.a2dp_offload.disabled=false
+persist.sys.fflag.override.settings_bluetooth_hearing_aid=true
 persist.vendor.bt.aac_frm_ctl.enabled=true
 persist.vendor.bt.aac_vbr_frm_ctl.enabled=true
 persist.vendor.qcom.bluetooth.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac-aptxadaptiver2
 persist.vendor.qcom.bluetooth.aac_frm_ctl.enabled=true
+persist.vendor.qcom.bluetooth.aac_vbr_ctl.enabled=true
 persist.vendor.qcom.bluetooth.aptxadaptiver2_1_support=true
 ro.bluetooth.a2dp_offload.supported=true
-vendor.qc2audio.suspend.enabled=true
-vendor.qc2audio.per_frame.flac.dec.enabled=true
+ro.vendor.bluetooth.csip_qti=true
 
 # Camera
+ro.camera.enableCamera1MaxZsl=1
 vendor.camera.aux.packageexcludelist=org.telegram.messenger,org.thunderdog.challegram,us.zoom.videomeetings
+
+# Crypto
+ro.crypto.metadata_init_delete_all_keys.enabled=true
 
 # Chipset
 ro.soc.manufacturer=QTI
@@ -103,15 +111,16 @@ ro.soc.manufacturer=QTI
 persist.vendor.dpm.vndr.feature=11
 persist.vendor.dpm.vndr.halservice.enable=1
 persist.vendor.dpm.vndr.idletimer.mode=default
-persist.vendor.dpm.vndr.tcm=2
 
 # Dirac
+persist.vendor.newdirac.cur.config=MUSIC
 persist.vendor.newdirac.dump=0
 persist.vendor.newdirac.enable.value=1.000000
 persist.vendor.newdirac.volume.value=0.000000
-persist.vendor.newdirac.cur.config=MUSIC
 
 # Display
+persist.sys.sf.color_mode=0
+persist.sys.sf.color_saturation=1.0
 persist.sys.sf.native_mode=260
 vendor.display.comp_mask=0
 vendor.display.disable_3d_adaptive_tm=1
@@ -129,18 +138,24 @@ vendor.display.disable_stc_dimming=1
 vendor.display.disable_system_load_check=1
 vendor.display.enable_async_powermode=0
 vendor.display.enable_async_vds_creation=1
-vendor.display.enable_dpps_dynamic_fps=1
 vendor.display.enable_display_extensions=1
+vendor.display.enable_dpps_dynamic_fps=1  
 vendor.display.enable_early_wakeup=1
 vendor.display.enable_hdr10_gpu_target=1
-vendor.display.enable_optimize_refresh=1
+vendor.display.enable_ic_hw_roundedcorner=1
+vendor.display.enable_optimize_refresh=1   
+vendor.display.enable_rc_support=1
 vendor.display.enable_rounded_corner=0
 vendor.display.use_layer_ext=1
 vendor.display.use_smooth_motion=1
 vendor.display.vds_allow_hwc=1
+vendor.gralloc.disable_ubwc=0
 
 # DRM
 drm.service.enabled=true
+
+# FUSE passthrough
+persist.sys.fuse.passthrough.enable=true
 
 # FRP
 ro.frp.pst=/dev/block/bootdevice/by-name/frp
@@ -152,12 +167,12 @@ vendor.gatekeeper.disable_spu=true
 debug.sf.disable_client_composition_cache=1
 debug.sf.enable_advanced_sf_phase_offset=1
 debug.sf.enable_gl_backpressure=1
-debug.sf.predict_hwc_composition_strategy=0
 debug.sf.high_fps_early_gl_phase_offset_ns=-2000000
 debug.sf.high_fps_early_phase_offset_ns=-4000000
 debug.sf.high_fps_late_app_phase_offset_ns=1000000
 debug.sf.high_fps_late_sf_phase_offset_ns=-2000000
 debug.sf.latch_unsignaled=1
+debug.sf.predict_hwc_composition_strategy=0
 debug.sf.treat_170m_as_sRGB=1
 ro.hardware.egl=adreno
 ro.hardware.vulkan=adreno
@@ -190,6 +205,9 @@ vendor.media.omx=0
 
 # Perf
 ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.perf-hal.ver=2.3
+ro.vendor.perf.scroll_opt=1
+ro.vendor.qspm.enable=true
 
 # Radio
 persist.radio.multisim.config=dsds
@@ -197,7 +215,6 @@ persist.vendor.radio.apm_sim_not_pwdn=1
 persist.vendor.radio.custom_ecc=1
 persist.vendor.radio.enableadvancedscan=true
 persist.vendor.radio.procedure_bytes=SKIP
-persist.vendor.radio.rat_on=combine
 persist.vendor.radio.sib16_support=1
 ro.telephony.default_network=33,33
 

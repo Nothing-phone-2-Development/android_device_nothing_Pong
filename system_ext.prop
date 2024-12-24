@@ -1,18 +1,32 @@
+# Audio
+ro.audio.ihaladaptervendorextension_enabled=true
+ro.qc.sdk.audio.fluencetype=none
+
 # Brightness
 persist.sys.brightness.low.gamma=true
 
 # Bluetooth
+bluetooth.hfp.codec_aptx_voice.enabled=true
+bluetooth.hfp.swb.aptx.power_management.enabled=true
+bluetooth.leaudio.dual_bidirection_swb.supported=true
+bluetooth.profile.pbap.sim.enabled=true
+bluetooth.profile.sap.server.enabled=true
 persist.bluetooth.bqr.event_mask=0x8000000E
 persist.bluetooth.bqr.min_interval_ms=6000
-
-# Dex2oat
-dalvik.vm.dex2oat64.enabled=true
+persist.bluetooth.leaudio.notify.idle.during.call=true
+persist.vendor.bluetooth.haltest=true
+persist.vendor.bluetooth.modem_nv_support=true
+persist.vendor.bt.a2dp_offload_cap=sbc-aptx-aptxtws-aptxhd-aac-ldac
+ro.bluetooth.leaudio_offload.supported=true
 
 # Display
 debug.sf.enable_hwc_vds=0
 
 # CNE
 persist.vendor.cne.feature=1
+
+# Dex2oat
+dalvik.vm.dex2oat64.enabled=true
 
 # DPM
 persist.vendor.dpm.feature=11
@@ -26,15 +40,33 @@ persist.dbg.vt_avail_ovr=1
 persist.dbg.wfc_avail_ovr=1
 
 # Media
+media.aac_51_output_enabled=true
 media.settings.xml=/vendor/etc/media_profiles_cape.xml
+media.stagefright.enable-aac=true
+media.stagefright.enable-fma2dp=true
+media.stagefright.enable-http=true
+media.stagefright.enable-player=true
+media.stagefright.enable-qcp=true
+media.stagefright.enable-scan=true
 media.stagefright.thumbnail.prefer_hw_codecs=true
+mmp.enable.3g2=true
+persist.mm.enable.prefetch=true
+qcom.hw.aac.encoder=true
 ro.media.recorder-max-base-layer-fps=60
 vendor.mm.enable.qcom_parser=4039922
 
 # Netmgr
 persist.data.df.agg.dl_pkt=10
 persist.data.df.agg.dl_size=4096
+persist.data.df.dev_name=rmnet_usb0
+persist.data.df.dl_mode=5
+persist.data.df.iwlan_mux=9
+persist.data.df.mux_count=8
+persist.data.df.ul_mode=5
+persist.data.wda.enable=true
+persist.rmnet.data.enable=true
 persist.vendor.data.mode=concurrent
+ro.vendor.use_data_netmgrd=true
 
 # Nothing feature
 ro.build.nothing.feature.base=0x4418438124a040126b4247b97ffL
@@ -42,9 +74,15 @@ ro.build.nothing.feature.diff.device.Pong=0x6001aa4144ac04803d1842000L
 
 # Radio
 ril.subscription.types=NV,RUIM
+ro.telephony.default_network=33,33
+ro.telephony.sim_slots.count=2
+telephony.active_modems.max_count=2
 
 # Sensors
 persist.vendor.sensors.enable.mag_filter=true
+
+# Time services
+persist.timed.enable=true
 
 # Vendor
 ro.vendor.qti.va_aosp.support=1
