@@ -59,7 +59,6 @@ blob_fixups: blob_fixups_user_type = {
     ('vendor/bin/qcc-trd', 'vendor/lib64/libqtr_sdk.so'): blob_fixup()
         .replace_needed('libgrpc++_unsecure.so', 'libgrpc++_unsecure_prebuilt.so'),
     ('vendor/bin/hw/android.hardware.gnss-aidl-service-qti', 'vendor/lib64/hw/android.hardware.gnss-aidl-impl-qti.so', 'vendor/lib64/libgarden.so', 'vendor/lib64/libgarden_haltests_e2e.so'): blob_fixup()
-        .patchelf_version('0_17_2')
         .replace_needed('android.hardware.gnss-V1-ndk_platform.so', 'android.hardware.gnss-V1-ndk.so'),
     ('vendor/bin/hw/android.hardware.security.keymint-service-qti', 'vendor/lib64/libqtikeymint.so'): blob_fixup()
         .replace_needed('android.hardware.security.keymint-V1-ndk_platform.so', 'android.hardware.security.keymint-V1-ndk.so')
@@ -79,10 +78,8 @@ blob_fixups: blob_fixups_user_type = {
     'vendor/lib64/libcamximageformatutils.so': blob_fixup()
         .replace_needed('vendor.qti.hardware.display.config-V2-ndk_platform.so', 'vendor.qti.hardware.display.config-V2-ndk.so'),
     'vendor/lib64/vendor.libdpmframework.so': blob_fixup()
-        .patchelf_version('0_17_2')
         .add_needed('libhidlbase_shim.so'),
     'vendor/lib64/libmorpho_video_stabilizer.so': blob_fixup()
-        .patchelf_version('0_17_2')
         .add_needed('libutils.so'),
     'vendor/lib64/vendor.qti.hardware.qxr-V1-ndk_platform.so': blob_fixup()
         .replace_needed('android.hardware.common-V2-ndk_platform.so', 'android.hardware.common-V2-ndk.so'),
